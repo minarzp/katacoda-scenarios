@@ -47,7 +47,8 @@
   },
   "environment": {
       "uilayout": "editor-terminal",
-      "uisettings": "python"
+      "uisettings": "python",
+      "hideintro": true
   },
   "backend": {
     "imageid": "python:3.6"
