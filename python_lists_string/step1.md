@@ -31,7 +31,6 @@ Lists can be added to each other using the plus symbol <code>+</code>. This will
 <pre class="file" data-filename="lists.py" data-target="append">
 fruits = ["apples", "cherries"]
 shopping_list = breakfast + fruits
-# Result: ["bread", "butter", "milk", "apples", "cherries"]
 </pre>
 
 We need to reload our script everytime it changes:
@@ -43,6 +42,7 @@ def reload():
     
 reload()
 
+# Result: ["bread", "butter", "milk", "apples", "cherries"]
 l.shopping_list
 ```{{execute}}
 
@@ -51,32 +51,30 @@ Note: This will not work for adding a single item to the list, as in: <code><s>s
 <pre class="file" data-filename="lists.py" data-target="append">
 shopping_list.append("honey")
 shopping_list = shopping_list + ["peanuts"] # (or better: shopping_list += ["peanuts"])
-# Result: ["bread", "butter", "milk", "apples", "cherries", "honey", "peanuts"]
 </pre>
 
 
 ```
 reload()
+# Result: ["bread", "butter", "milk", "apples", "cherries", "honey", "peanuts"]
 l.shopping_list
 ```{{execute}}
 
 ## Accessing list items with indices
 
 ```
-l.shopping_list[0] # Result: bread
-l.shopping_list[2] # Result: milk
+l.shopping_list[0] # bread
+l.shopping_list[2] # milk
 
-# All items from index 1 to 3 inclusive
-l.shopping_list[1:4]
-# First 2 items
-l.shopping_list[:2]
-# Items from index 4 to the end
-l.shopping_list[4:]
+l.shopping_list[1:4] # items indices 1 to 3 inclusive
+l.shopping_list[:2] # first 2 items
+l.shopping_list[2:3] # milk
+l.shopping_list[4:] # items index 4 to the end
 ```{{execute}}
 
 ## Practice!
 
-Inside <code>lists.py</code>, define a new list called <code>dinner</code>, with items "pasta" and "sausage", and add it to the shopping list. Then, define a new list called <code>vegan_shopping_list</code>, and add all vegan items from the shopping list to it, using <strong>only</strong> the range subsetting and plus syntax. If you do this right, the following command should result in <code>["bread", "apples", "cherries", "pasta"]</code>.
+Inside <code>lists.py</code>, define a new list called <code>dinner</code>, with items "pasta" and "sausage", and add it to the shopping list. Then, define a new list called <code>vegan_shopping_list</code>, and add all vegan items from the shopping list to it, using <strong>only</strong> the range subsetting and plus syntax. If you do this right, the following command should result in <code>["bread", "apples", "cherries", "peanuts", "pasta"]</code>.
 
 ```
 reload()
