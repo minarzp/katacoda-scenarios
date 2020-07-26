@@ -46,12 +46,12 @@ reload()
 l.shopping_list
 ```{{execute}}
 
-Note: This will not work for adding a single item to the list, as in: <code><s>shopping_list = shopping_list + "cookies"</s></code>. To do this, either use the <code>append()</code> method or use the plus symbol to add a new list with a single value:
+Note: This will not work for adding a single item to the list, as in: <code><s>shopping_list = shopping_list + "honey"</s></code>. To do this, either use the <code>append()</code> method or use the plus symbol to add a new list with a single value:
 
 <pre class="file" data-filename="lists.py" data-target="append">
-shopping_list.append("cookies")
+shopping_list.append("honey")
 shopping_list = shopping_list + ["peanuts"] # (or better: shopping_list += ["peanuts"])
-# Result: ["bread", "butter", "milk", "apples", "cherries", "cookies", "peanuts"]
+# Result: ["bread", "butter", "milk", "apples", "cherries", "honey", "peanuts"]
 </pre>
 
 
@@ -74,12 +74,11 @@ l.shopping_list[:2]
 l.shopping_list[4:]
 ```{{execute}}
 
+## Practice!
 
-<pre class="file" data-filename="lists.py" data-target="append">
-
-</pre>
+Inside <code>lists.py</code>, define a new list called <code>dinner</code>, with items "pasta" and "sausage", and add it to the shopping list. Then, define a new list called <code>vegan_shopping_list</code>, and add all vegan items from the shopping list to it, using <strong>only</strong> the range subsetting and plus syntax. If you do this right, the following command should result in <code>["bread", "apples", "cherries", "pasta"]</code>.
 
 ```
 reload()
-
+l.vegan_shopping_list
 ```{{execute}}
