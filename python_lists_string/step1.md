@@ -11,26 +11,12 @@ List values are placed in between square brackets <code>[ ]</code>, separated by
 breakfast = ["bread", "butter", "milk"]
 </pre>
 
-Let's load our python file in the shell now:
+Click on below to load our python file in the shell now and print the "breakfast":
 
 ```
-import importlib
-import lists
-
-def reload():
-  importlib.reload(lists)
-  from lists import *
-
-
-reload()
+import lists as l
+l.breakfast
 ```{{execute}}
-
-And print the "breakfast":
-
-```
-breakfast
-```{{execute}}
-
 
 Empty lists do not contain any values within the square brackets.
 
@@ -48,9 +34,16 @@ shopping_list = breakfast + fruits
 # Result: ["bread", "butter", "milk", "apples", "cherries"]
 </pre>
 
+We need to reload our script everytime it changes:
+
 ```
+import importlib
+def reload():
+  importlib.reload(l)
+    
 reload()
-shopping_list
+
+l.shopping_list
 ```{{execute}}
 
 Note: This will not work for adding a single item to the list, as in: <code><s>shopping_list = shopping_list + "cookies"</s></code>. To do this, either use the <code>append()</code> method or use the plus symbol to add a new list with a single value:
@@ -61,25 +54,24 @@ shopping_list = shopping_list + ["peanuts"] # (or better: shopping_list += ["pea
 # Result: ["bread", "butter", "milk", "apples", "cherries", "cookies", "peanuts"]
 </pre>
 
-We need to reload our script everytime it changes:
 
 ```
 reload()
-shopping_list
+l.shopping_list
 ```{{execute}}
 
 ## Accessing list items with indices
 
 ```
-shopping_list[0] # Result: bread
-shopping_list[2] # Result: milk
+l.shopping_list[0] # Result: bread
+l.shopping_list[2] # Result: milk
 
 # All items from index 1 to 3 inclusive
-shopping_list[1:4]
+l.shopping_list[1:4]
 # First 2 items
-shopping_list[:2]
+l.shopping_list[:2]
 # Items from index 4 to the end
-shopping_list[4:]
+l.shopping_list[4:]
 ```{{execute}}
 
 
