@@ -11,12 +11,24 @@ List values are placed in between square brackets <code>[ ]</code>, separated by
 breakfast = ["bread", "butter", "milk"]
 </pre>
 
-Let's load our python file in the shell now and print the list we just made:
+Let's load our python file in the shell now:
 
 ```
 import importlib
-import lists as l
-l.breakfast
+import lists
+
+def reload():
+  importlib.reload(lists)
+  from lists import *
+
+
+reload()
+```{{execute}}
+
+And print the "breakfast":
+
+```
+breakfast
 ```{{execute}}
 
 
@@ -37,8 +49,8 @@ shopping_list = breakfast + fruits
 </pre>
 
 ```
-importlib.reload(lists)
-l.shopping_list
+reload()
+shopping_list
 ```{{execute}}
 
 Note: This will not work for adding a single item to the list, as in: <code><s>shopping_list = shopping_list + "cookies"</s></code>. To do this, either use the <code>append()</code> method or use the plus symbol to add a new list with a single value:
@@ -52,22 +64,22 @@ shopping_list = shopping_list + ["peanuts"] # (or better: shopping_list += ["pea
 We need to reload our script everytime it changes:
 
 ```
-importlib.reload(lists)
-l.shopping_list
+reload()
+shopping_list
 ```{{execute}}
 
 ## Accessing list items with indices
 
 ```
-l.shopping_list[0] # Result: bread
-l.shopping_list[2] # Result: milk
+shopping_list[0] # Result: bread
+shopping_list[2] # Result: milk
 
 # All items from index 1 to 3 inclusive
-l.shopping_list[1:4]
+shopping_list[1:4]
 # First 2 items
-l.shopping_list[:2]
+shopping_list[:2]
 # Items from index 4 to the end
-l.shopping_list[4:]
+shopping_list[4:]
 ```{{execute}}
 
 
@@ -76,5 +88,6 @@ l.shopping_list[4:]
 </pre>
 
 ```
-importlib.reload(lists)
+reload()
+
 ```{{execute}}
