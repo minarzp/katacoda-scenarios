@@ -1,5 +1,5 @@
 Inspired from <a href = "https://www.codecademy.com/learn/paths/build-python-web-apps-flask/tracks/flask-python-data-structures-loops/modules/learn-python3-lists/cheatsheet" target="_blank">here</a>.
-Before we begin click `Python`{{execute}} to start the interactive Python shell.
+Before we begin click `python`{{execute}} to start the interactive Python shell.
 
 ## Lists
 
@@ -12,8 +12,8 @@ breakfast = ["bread", "butter", "milk"]
 </pre>
 
 ```
-import lists as l
-l.shopping_list
+from lists import *
+breakfast
 ```{{execute}}
 
 
@@ -34,8 +34,8 @@ shopping_list = breakfast + fruits
 </pre>
 
 ```
-import lists as l
-l.shopping_list
+from lists import *
+shopping_list
 ```{{execute}}
 
 Note: This will not work for adding a single item to the list, as in: <code><s>shopping_list = shopping_list + "cookies"</s></code>. To do this, either use the <code>append()</code> method or use the plus symbol to add a new list with a single value:
@@ -47,8 +47,8 @@ shopping_list = shopping_list + ["peanuts"] # (or better: shopping_list += ["pea
 </pre>
 
 ```
-import lists as l
-l.shopping_list
+from lists import *
+shopping_list
 ```{{execute}}
 
 ## Accessing list items with indices
@@ -58,15 +58,18 @@ print(l.shopping_list[0]) # Result: bread
 print(l.shopping_list[2]) # Result: milk
 
 # All items from index 1 to 3 inclusive
-print(l.shopping_list[1:4])
+shopping_list[1:4]
 # Result: ["butter", "milk", "bread"]
 # First 2 items
-print(l.shopping_list[:2])
+shopping_list[:2]
 # Items from index 4 to the end
-print(l.shopping_list[4:])
+shopping_list[4:]
 ```{{execute}}
 
 
 <pre class="file" data-filename="lists.py" data-target="append">
 
 </pre>
+
+```
+```{{execute}}
