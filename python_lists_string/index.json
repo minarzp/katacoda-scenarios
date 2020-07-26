@@ -52,8 +52,7 @@
   "backend": {
     "imageid": "python:3.6"
   },
-    "files": {
-	"strings.py",
-	"lists.py"
-    }
+  "files": [
+     "strings.py", "lists.py"
+  ]
 }
