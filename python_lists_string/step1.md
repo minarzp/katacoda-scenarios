@@ -37,8 +37,8 @@ shopping_list = breakfast + fruits
 </pre>
 
 ```
-from lists import *
-shopping_list
+importlibs.reload(lists)
+l.shopping_list
 ```{{execute}}
 
 Note: This will not work for adding a single item to the list, as in: <code><s>shopping_list = shopping_list + "cookies"</s></code>. To do this, either use the <code>append()</code> method or use the plus symbol to add a new list with a single value:
