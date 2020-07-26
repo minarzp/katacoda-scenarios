@@ -11,9 +11,12 @@ List values are placed in between square brackets <code>[ ]</code>, separated by
 breakfast = ["bread", "butter", "milk"]
 </pre>
 
+Let's load our python file in the shell now and print the list we just made:
+
 ```
-from lists import *
-breakfast
+import importlibs
+import lists as l
+l.breakfast
 ```{{execute}}
 
 
@@ -46,24 +49,25 @@ shopping_list = shopping_list + ["peanuts"] # (or better: shopping_list += ["pea
 # Result: ["bread", "butter", "milk", "apples", "cherries", "cookies", "peanuts"]
 </pre>
 
+We need to reload our script everytime it changes:
+
 ```
-from lists import *
-shopping_list
+importlibs.reload(lists)
+l.shopping_list
 ```{{execute}}
 
 ## Accessing list items with indices
 
 ```
-print(l.shopping_list[0]) # Result: bread
-print(l.shopping_list[2]) # Result: milk
+l.shopping_list[0] # Result: bread
+l.shopping_list[2] # Result: milk
 
 # All items from index 1 to 3 inclusive
-shopping_list[1:4]
-# Result: ["butter", "milk", "bread"]
+l.shopping_list[1:4]
 # First 2 items
-shopping_list[:2]
+l.shopping_list[:2]
 # Items from index 4 to the end
-shopping_list[4:]
+l.shopping_list[4:]
 ```{{execute}}
 
 
@@ -72,4 +76,5 @@ shopping_list[4:]
 </pre>
 
 ```
+importlibs.reload(lists)
 ```{{execute}}
