@@ -37,7 +37,7 @@ shopping_list = breakfast + fruits
 </pre>
 
 ```
-importlibs.reload(lists)
+importlib.reload(lists)
 l.shopping_list
 ```{{execute}}
 
