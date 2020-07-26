@@ -1,4 +1,6 @@
 Inspired from <a href = "https://www.codecademy.com/learn/paths/build-python-web-apps-flask/tracks/flask-python-data-structures-loops/modules/learn-python3-lists/cheatsheet" target="_blank">here</a>.
+Before we begin click `Python`{{execute}} to start the interactive Python shell.
+
 ## Lists
 
 In Python, lists are ordered collections of items that allow for easy use of a set of data.
@@ -7,12 +9,17 @@ List values are placed in between square brackets <code>[ ]</code>, separated by
 
 <pre class="file" data-filename="lists.py" data-target="append">
 breakfast = ["bread", "butter", "milk"]
-print(breakfast)
 </pre>
+
+```
+import lists as l
+l.shopping_list
+```{{execute}}
+
 
 Empty lists do not contain any values within the square brackets.
 
-<pre class="file" data-filename="lists.py" data-target="append">
+<pre class="code">
 empty_list=[]
 </pre>
 
@@ -23,11 +30,15 @@ Lists can be added to each other using the plus symbol <code>+</code>. This will
 <pre class="file" data-filename="lists.py" data-target="append">
 fruits = ["apples", "cherries"]
 shopping_list = breakfast + fruits
-print(shopping_list)
 # Result: ["bread", "butter", "milk", "apples", "cherries"]
 </pre>
 
-Note: This will not work for adding a single item to the list, as in: <code><del>shopping_list = shopping_list + "cookies"</del></code>. To do this, either use the <code>append()</code> method or use the plus symbol to add a new list with a single value:
+```
+import lists as l
+l.shopping_list
+```{{execute}}
+
+Note: This will not work for adding a single item to the list, as in: <code><s>shopping_list = shopping_list + "cookies"</s></code>. To do this, either use the <code>append()</code> method or use the plus symbol to add a new list with a single value:
 
 <pre class="file" data-filename="lists.py" data-target="append">
 shopping_list.append("cookies")
@@ -35,20 +46,25 @@ shopping_list = shopping_list + ["peanuts"] # (or better: shopping_list += ["pea
 # Result: ["bread", "butter", "milk", "apples", "cherries", "cookies", "peanuts"]
 </pre>
 
+```
+import lists as l
+l.shopping_list
+```{{execute}}
+
 ## Accessing list items with indices
 
-<pre class="file" data-filename="lists.py" data-target="append">
-print(shopping_list[0]) # Result: bread
-print(shopping_list[2]) # Result: milk
+```
+print(l.shopping_list[0]) # Result: bread
+print(l.shopping_list[2]) # Result: milk
 
 # All items from index 1 to 3 inclusive
-print(shopping_list[1:4])
+print(l.shopping_list[1:4])
 # Result: ["butter", "milk", "bread"]
 # First 2 items
-print(shopping_list[:2])
+print(l.shopping_list[:2])
 # Items from index 4 to the end
-print(shopping_list[4:])
-</pre>
+print(l.shopping_list[4:])
+```{{execute}}
 
 
 <pre class="file" data-filename="lists.py" data-target="append">
