@@ -14,7 +14,7 @@ breakfast = ["bread", "butter", "milk"]
 Let's load our python file in the shell now and print the list we just made:
 
 ```
-import importlibs
+import importlib
 import lists as l
 l.breakfast
 ```{{execute}}
@@ -52,7 +52,7 @@ shopping_list = shopping_list + ["peanuts"] # (or better: shopping_list += ["pea
 We need to reload our script everytime it changes:
 
 ```
-importlibs.reload(lists)
+importlib.reload(lists)
 l.shopping_list
 ```{{execute}}
 
@@ -76,5 +76,5 @@ l.shopping_list[4:]
 </pre>
 
 ```
-importlibs.reload(lists)
+importlib.reload(lists)
 ```{{execute}}
