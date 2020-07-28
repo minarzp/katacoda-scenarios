@@ -28,12 +28,11 @@ empty_list=[]
 
 Lists can be added to each other using the plus symbol `+`. This will result in a new list containing the same items in the same order with the first list’s items coming first.
 
-```python
 <pre class="file" data-filename="lists.py" data-target="append">
 fruits = ["apples", "cherries"]
 shopping_list = breakfast + fruits
 </pre>
-```
+
 
 We need to reload our script everytime it changes:
 
@@ -51,11 +50,9 @@ l.shopping_list
 Note: This will not work for adding a single item to the list, as in: <code><s>shopping_list = shopping_list + "cookies"</s></code>. To do this, either use the `append()` method or use the plus symbol to add a new list with a single value:
 
 <pre class="file" data-filename="lists.py" data-target="append">
-```python
 shopping_list.append("honey")
 shopping_list += ["peanuts"]
 # (short form of: shopping_list = shopping_list + ["peanuts"])
-```
 </pre>
 
 
