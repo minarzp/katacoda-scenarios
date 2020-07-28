@@ -3,7 +3,7 @@
 Before we begin click `python`{{execute}} to start the interactive Python shell.
 
 The following function is supposed to print all square numbers smaller than 100. It is not working proberly though. Can you fix it?
-ss
+
 <pre class="file" data-filename="fix_the_code.py" data-target="append">
 def print_squares():
   for num in range(10):
@@ -11,14 +11,14 @@ def print_squares():
     num += 1
 </pre>
 
-```
+```python
 import fix_the_code as f
 f.print_squares()
-```{{execute}}
+``` {{execute}}
 
 Hint: The for loop increments the iterator variable (`num` here) automatically. No need to increment it yourself.
 
-```
+```python
 import importlib
 def reload():
   importlib.reload(f)
@@ -34,7 +34,7 @@ def swap(first, second):
   print(f'Second variable after swap: {second}')
 </pre>
 
-```
+```python
 reload()
 f.swap("I'm first", "I'm second")
 ```{{execute}}
@@ -45,7 +45,7 @@ def sum_1_to_n(n):
   return sum(range(n))
 </pre>
 
-```
+```python
 reload()
 f.sum_1_to_5(10) # should be 15 
 ```{{execute}}
@@ -57,7 +57,7 @@ def away(minutes):
   print("I'm back!")
 </pre>
 
-```
+```python
 reload()
 f.away(6)
 ```{{execute}}
@@ -66,7 +66,7 @@ f.away(6)
 
 </pre>
 
-```
+```python
 reload()
 
 ```{{execute}}

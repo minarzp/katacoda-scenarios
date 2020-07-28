@@ -5,24 +5,20 @@ Before we begin click `python`{{execute}} to start the interactive Python shell.
 
 In Python, lists are ordered collections of items that allow for easy use of a set of data.
 
-List values are placed in between square brackets `[ ]`, separated by commas. It is good practice to put a space between the comma and the next value. The values in a list do not need to be unique (the same value can be repeated).
+List values are placed in between square brackets `[ ]`, separated by commas. It is good practice to put a space between the comma and the next value. The values in a list do not need to be unique (the same value can be repeated). To make and empty list, use square brackets with no values in them:
 
 <pre class="file" data-filename="lists.py" data-target="append">
 breakfast = ["bread", "butter", "milk"]
+shopping_list = [] # Empty for now
 </pre>
 
-Click on below to load our python file in the shell now and print the "breakfast":
+Click on below to load our python file in the shell and print the "breakfast":
 
 ```python
 import lists as l
 l.breakfast
 ```{{execute}}
 
-Empty lists do not contain any values within the square brackets.
-
-```python
-empty_list=[]
-```
 
 ## Adding Lists Together
 
