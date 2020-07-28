@@ -46,7 +46,7 @@ reload()
 l.shopping_list
 ```{{execute}}
 
-Note: This will not work for adding a single item to the list, as in: </s>`shopping_list = shopping_list + "honey"`</s>. To do this, either use the `append()` method or use the plus symbol to add a new list with a single value:
+Note: This will not work for adding a single item to the list, as in: <s>`shopping_list = shopping_list + "honey"`</s>. To do this, either use the `append()` method or use the plus symbol to add a new list with a single value:
 
 <pre class="file" data-filename="lists.py" data-target="append">
 shopping_list.append("honey")
