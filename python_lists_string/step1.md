@@ -28,12 +28,12 @@ empty_list=[]
 
 Lists can be added to each other using the plus symbol `+`. This will result in a new list containing the same items in the same order with the first list’s items coming first.
 
-<pre class="file" data-filename="lists.py" data-target="append">
 ```python
+<pre class="file" data-filename="lists.py" data-target="append">
 fruits = ["apples", "cherries"]
 shopping_list = breakfast + fruits
-```
 </pre>
+```
 
 We need to reload our script everytime it changes:
 
