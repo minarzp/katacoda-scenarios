@@ -1,4 +1,4 @@
-Inspired from [here]("https://www.codecademy.com/learn/paths/build-python-web-apps-flask/tracks/flask-python-data-structures-loops/modules/learn-python3-lists/cheatsheet).
+Inspired from [here](https://www.codecademy.com/learn/paths/build-python-web-apps-flask/tracks/flask-python-data-structures-loops/modules/learn-python3-lists/cheatsheet).
 Before we begin click `python`{{execute}} to start the interactive Python shell.
 
 # Lists
