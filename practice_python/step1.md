@@ -1,9 +1,9 @@
-## Some common pitfalls
+# Some common pitfalls
 
 Before we begin click `python`{{execute}} to start the interactive Python shell.
 
 The following function is supposed to print all square numbers smaller than 100. It is not working proberly though. Can you fix it?
-
+ss
 <pre class="file" data-filename="fix_the_code.py" data-target="append">
 def print_squares():
   for num in range(10):
@@ -13,10 +13,10 @@ def print_squares():
 
 ```
 import fix_the_code as f
-print_squares()
+f.print_squares()
 ```{{execute}}
 
-Hint: The for loop increments the iterator variable (<code>num</code> here) automatically. No need to increment it yourself.
+Hint: The for loop increments the iterator variable (`num` here) automatically. No need to increment it yourself.
 
 ```
 import importlib

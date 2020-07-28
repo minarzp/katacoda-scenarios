@@ -1,11 +1,11 @@
-Inspired from <a href = "https://www.codecademy.com/learn/paths/build-python-web-apps-flask/tracks/flask-python-data-structures-loops/modules/learn-python3-lists/cheatsheet" target="_blank">here</a>.
+Inspired from [here]("https://www.codecademy.com/learn/paths/build-python-web-apps-flask/tracks/flask-python-data-structures-loops/modules/learn-python3-lists/cheatsheet).
 Before we begin click `python`{{execute}} to start the interactive Python shell.
 
 ## Lists
 
 In Python, lists are ordered collections of items that allow for easy use of a set of data.
 
-List values are placed in between square brackets <code>[ ]</code>, separated by commas. It is good practice to put a space between the comma and the next value. The values in a list do not need to be unique (the same value can be repeated).
+List values are placed in between square brackets `[ ]`, separated by commas. It is good practice to put a space between the comma and the next value. The values in a list do not need to be unique (the same value can be repeated).
 
 <pre class="file" data-filename="lists.py" data-target="append">
 breakfast = ["bread", "butter", "milk"]
@@ -26,7 +26,7 @@ empty_list=[]
 
 ## Adding Lists Together
 
-Lists can be added to each other using the plus symbol <code>+</code>. This will result in a new list containing the same items in the same order with the first list’s items coming first.
+Lists can be added to each other using the plus symbol `+`. This will result in a new list containing the same items in the same order with the first list’s items coming first.
 
 <pre class="file" data-filename="lists.py" data-target="append">
 fruits = ["apples", "cherries"]
@@ -46,7 +46,7 @@ reload()
 l.shopping_list
 ```{{execute}}
 
-Note: This will not work for adding a single item to the list, as in: <code><s>shopping_list = shopping_list + "honey"</s></code>. To do this, either use the <code>append()</code> method or use the plus symbol to add a new list with a single value:
+Note: This will not work for adding a single item to the list, as in: `~~shopping_list = shopping_list + "honey"~~`. To do this, either use the `append()` method or use the plus symbol to add a new list with a single value:
 
 <pre class="file" data-filename="lists.py" data-target="append">
 shopping_list.append("honey")
@@ -75,7 +75,7 @@ l.shopping_list[4:] # items indices 4 to the end
 
 ## Practice!
 
-Inside <code>lists.py</code>, define a new list called <code>dinner</code>, with items "pasta" and "sausage", and add it to the shopping list. Then, define another list called <code>vegan_shopping_list</code>, and add all vegan items from the shopping list to it, using <strong>only</strong> the range subsetting and plus syntax. If you do this right, the following command should result in <code>["bread", "apples", "cherries", "peanuts", "pasta"]</code>.
+Inside `lists.py`, define a new list called `dinner`, with items "pasta" and "sausage", and add it to the shopping list. Then, define another list called `vegan_shopping_list`, and add all vegan items from the shopping list to it, using **only** the range subsetting and plus syntax. If you do this right, the following command should result in `["bread", "apples", "cherries", "peanuts", "pasta"]`.
 
 ```
 reload()
