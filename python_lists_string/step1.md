@@ -72,9 +72,11 @@ l.shopping_list[4:] # items indices 4 to the end
 
 ## Practice!
 
-Inside `lists.py`, define a new list called `dinner`, with items "pasta" and "sausage", and add it to the shopping list. Then, define another list called `vegan_shopping_list`, and add all vegan items from the shopping list to it, using **only** the range subsetting and plus syntax. If you do this right, the following command should result in `["bread", "apples", "cherries", "peanuts", "pasta"]`.
+Inside `lists.py`, define a new list called `dinner`, with items "pasta" and "sausage", and add it to the shopping list. Then, define another list called `vegan_shopping_list`, and add all vegan items from the shopping list to it, using **only** the range subsetting and plus syntax. Test it by running:
 
 ```python
 reload()
 l.vegan_shopping_list
 ```{{execute}}
+
+ This should result in: `["bread", "apples", "cherries", "peanuts", "pasta"]`
