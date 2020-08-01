@@ -86,6 +86,8 @@ l.shopping_list[4:] # items indices 4 to the end
 
 ## Practice!
 
+### Vegan Shopping List
+
 Inside `lists.py`, define a new list called `dinner`, with items "pasta" and "sausage", and add it to the shopping list. Then, define another list called `vegan_shopping_list`, and add all vegan items from the shopping list to it, using **only** the range subsetting and plus syntax. Test it by running:
 
 ```python
@@ -94,3 +96,7 @@ l.vegan_shopping_list
 ```{{execute}}
 
  This should result in: `["bread", "apples", "cherries", "peanuts", "pasta"]`
+
+### The Middle Element
+
+Create a function called `middle_element` that takes one input `lst` and returns the middle element, if `lst` has an odd number of elements and the average of the middle two elements if there are an even number of elements. 
