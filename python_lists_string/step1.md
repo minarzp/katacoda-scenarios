@@ -66,7 +66,7 @@ len(l.shopping_list)
 ``` {{execute}}
 
 ## Accessing list items with indices
-[Python list indexing](./images/python-list.png)
+[Python list indexing](./assets/python-list.png)
 Individual list items can be accessed using the syntax `list[index]`. Indices begin at zero and end at the length of the list minus one. So the first item is at index `0` and the last one at index `len(list) - 1`. You can select a range of items using the symbol `:`: e.g. `list[1:3]` gives you a new list with only the items at indices 1 and 2. When selecting a range, if you want to start from the first item, there is no need to specify the index `0`  before the `:`. Similarly, if you want to select a range ending with the last item, you don't need to specify an index after `:`:
 
 ```python
