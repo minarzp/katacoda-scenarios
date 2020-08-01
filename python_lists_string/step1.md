@@ -84,7 +84,7 @@ l.shopping_list[4:] # items indices 4 to the end
 ```{{execute}}
 
 
-## Practice!
+# Practice!
 
 ### Vegan Shopping List
 
